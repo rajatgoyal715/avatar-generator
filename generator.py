@@ -2,6 +2,7 @@
 from PIL import Image
 import numpy as np
 from random import randrange
+from argparse import ArgumentParser
 
 
 # Define constants (Or read constants from user in future)
@@ -102,8 +103,16 @@ def generateImage():
     img = Image.fromarray(image_array, 'RGB')
     img.save(output_file_name)
 
+def readArguments():
+    parser = ArgumentParser()
+    parser.add_argument("-f", "--file", dest="filename", help="Write generated image to this file")
+
+    args = parser.parse_args()
+    global output_file_name
+    output_file_name = args.filename
 
 def main():
+    readArguments()
     generateImage()
 
 if __name__ == "__main__":
