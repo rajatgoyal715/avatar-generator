@@ -5,9 +5,7 @@ Github Avatar is the inspiration for this project.
 
 Deployed at https://github-avatar-generator.herokuapp.com/
 
-Please note that the browser automatically caches the response, so to generate a new avatar please disable the browser cache.
-
-[How to disable cache](https://stackoverflow.com/a/8392547/5463601)
+Please note that the browser automatically caches the response, so to generate a new avatar please [disable the browser cache](https://stackoverflow.com/a/8392547/5463601).
 
 
 ## Results
